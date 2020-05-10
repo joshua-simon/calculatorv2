@@ -1,7 +1,5 @@
-const firstNum = document.querySelector('[data-num-one]')
-const secondNum = document.querySelector('[data-num-two]')
 const button = document.querySelector('[data-button]')
-
+const output = document.querySelector('[data-num-output]')
 
 const getValueOne = () => {
     let inputVal1 = document.getElementById('input').value
@@ -13,7 +11,12 @@ const getValueTwo = () => {
     return inputVal2
 }
 
+const add = () => {
+    return parseInt(getValueOne())+parseInt(getValueTwo())
+}
 
-button.addEventListener('click', ()=> {
-    console.log(parseInt(getValueOne())+parseInt(getValueTwo()))
+
+button.addEventListener('click', () => {
+    document.getElementById('numberOutput').innerHTML = add()
 })
+
