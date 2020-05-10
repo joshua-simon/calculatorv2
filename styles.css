@@ -1,27 +1,5 @@
 body {
-padding: 0;
-margin: 0;
-background: linear-gradient(to right, blue, lightblue);
-}
-
-.calculator-grid {
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    grid-template-columns: repeat(4,100px);
-    grid-template-rows: minmax (120px,auto) repeat(5,100px);
-}
-
-.calculator-grid > button {
-    cursor: pointer;
-    font-size: 2rem;
-    border: 1px solid white;
-    outline: none;
-    background-color: aqua;
-}
-
-.calculator-grid > button:hover {
-    background-color: blue;
+    background: linear-gradient(to right, blue, lightblue) ;
 }
 
 .output {
@@ -34,10 +12,10 @@ background: linear-gradient(to right, blue, lightblue);
     padding: 20px;
     word-wrap: break-word;
     word-break: break-all;
-}
+  }
 
-.output .numOutput {
-    color: white;
-    font-size: 2.5 rem;
+  .numOutput {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
     font-family: Arial, Helvetica, sans-serif;
-}
+  }
