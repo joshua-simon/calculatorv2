@@ -1,5 +1,7 @@
-const button = document.querySelector('[data-button]')
-const output = document.querySelector('[data-num-output]')
+const addButton = document.querySelector('[data-addButton]')
+const subButton = document.querySelector('[data-subButton]')
+const multButton = document.querySelector('[data-multButton]')
+const divButton = document.querySelector('[data-divButton]')
 
 const getValueOne = () => {
     let inputVal1 = document.getElementById('input').value
@@ -15,8 +17,32 @@ const add = () => {
     return parseInt(getValueOne())+parseInt(getValueTwo())
 }
 
+const sub = () => {
+    return parseInt(getValueOne())-parseInt(getValueTwo())
+}
 
-button.addEventListener('click', () => {
+const mult = () => {
+    return parseInt(getValueOne())*parseInt(getValueTwo())
+}
+
+const div = () => {
+    return parseInt(getValueOne())/parseInt(getValueTwo())
+}
+
+
+addButton.addEventListener('click', () => {
     document.getElementById('numberOutput').innerHTML = add()
+})
+
+subButton.addEventListener('click', () => {
+    document.getElementById('numberOutput').innerHTML = sub()
+})
+
+multButton.addEventListener('click', () => {
+    document.getElementById('numberOutput').innerHTML = mult()
+})
+
+divButton.addEventListener('click', () => {
+    document.getElementById('numberOutput').innerHTML = div()
 })
 
