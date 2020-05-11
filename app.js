@@ -45,4 +45,3 @@ multButton.addEventListener('click', () => {
 divButton.addEventListener('click', () => {
     document.getElementById('numberOutput').innerHTML = div()
 })
-
